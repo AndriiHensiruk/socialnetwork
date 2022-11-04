@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Nov 04, 2022 at 01:25 PM
+-- Generation Time: Nov 04, 2022 at 01:55 PM
 -- Server version: 8.0.30
 -- PHP Version: 7.2.34
 
@@ -40,7 +40,9 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `user_id`, `post_content`, `upload_image`, `post_date`) VALUES
-(1, 1, 'dfgsdgs', 'bg.png.31', '2022-11-04 10:12:54');
+(1, 1, 'dfgsdgs', 'bg.png.31', '2022-11-04 10:12:54'),
+(2, 3, 'xfgsdhshw', 'cursor.png.81', '2022-11-04 10:53:23'),
+(3, 4, 'sgtsertesrtyer', 'bg.png.10', '2022-11-04 10:55:14');
 
 -- --------------------------------------------------------
 
@@ -73,7 +75,10 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `f_name`, `l_name`, `user_name`, `describe_user`, `Relationship`, `user_pass`, `user_email`, `user_country`, `user_gender`, `user_birthday`, `user_image`, `user_cover`, `user_reg_date`, `status`, `posts`, `recovery_account`) VALUES
-(1, 'Andrii', 'Hensiruk', 'andrii_hensiruk_582003', 'Hello Coding Cafe.This is my default status!', '...', '123456789', 'Hensiruk@gmail.com', 'UK', 'Male', '1988-05-13', 'cursor.png.22', 'default_cover.jpg', '2022-11-04 09:33:34', 'verified', 'yes', 'Iwanttoputading intheuniverse.');
+(1, 'Andrii', 'Hensiruk', 'andrii_hensiruk_582003', 'Hello Coding Cafe.This is my default status!', '...', '123456789', 'Hensiruk@gmail.com', 'UK', 'Male', '1988-05-13', 'cursor.png.22', 'default_cover.jpg', '2022-11-04 09:33:34', 'verified', 'yes', 'Iwanttoputading intheuniverse.'),
+(2, 'Anna', 'Yhac', 'anna_yhac_976754', 'Hello.This is my default status!', '...', '123456789', 'GHIo@xffsddf.com', 'Ukraine', 'Female', '2022-11-17', 'head_sun_flower.png', 'default_cover.jpg', '2022-11-04 10:51:02', 'verified', 'no', 'Iwanttoputading intheuniverse.'),
+(3, 'Vala', 'Popadech', 'vala_popadech_640900', 'Hello.This is my default status!', '...', '123456789', 'Vala@gmail.com', 'Ukraine', 'Female', '2022-11-01', 'head_sun_flower.png', 'default_cover.jpg', '2022-11-04 10:52:19', 'verified', 'yes', 'Iwanttoputading intheuniverse.'),
+(4, 'Sergy', 'Kotyk', 'sergy_kotyk_501094', 'Hello.This is my default status!', '...', '123456789', 'Sergy@gmail.com', 'Ukraine', 'Male', '2022-11-23', 'head_sun_flower.png', 'default_cover.jpg', '2022-11-04 10:54:38', 'verified', 'yes', 'Iwanttoputading intheuniverse.');
 
 --
 -- Indexes for dumped tables
@@ -99,13 +104,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `post_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
